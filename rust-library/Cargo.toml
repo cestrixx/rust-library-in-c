@@ -1,0 +1,13 @@
+[package]
+name = "rust-library-to-c"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name         = "rustlib"
+crate-type   = ["rlib", "cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc="0.2.126"
